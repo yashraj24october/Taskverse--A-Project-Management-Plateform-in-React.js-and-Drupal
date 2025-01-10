@@ -1,0 +1,31 @@
+nav.nav-menu.account-menu ul {
+  display: flex;
+  column-gap: 1rem;
+  list-style: none;
+  margin: 0;
+  li{
+    font-weight: 600;
+    padding: 8px 20px !important;
+    border-radius: 3rem;
+    border:2px double #1746BC;
+    box-sizing: border-box;
+    &.signup-button{
+      background: #000;
+      color: #fff;
+     border:none !important;
+      &:hover{
+        background: hwb(0 0% 100%);
+        color: #fff;
+        box-shadow: 1px 2px 4px grey;
+      }
+        }
+
+        &:hover{
+          background: #000;
+          color: #fff;
+          border-color: #000;
+          cursor:pointer
+        }
+  }
+
+}

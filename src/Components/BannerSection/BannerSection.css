@@ -1,0 +1,75 @@
+.banner-section{
+ 
+    padding-top: 200px;
+
+  .banner-content  {
+    h1{
+    font-size: 56px;
+    line-height: 70px;
+    font-weight: 700;
+    max-width: 80%;
+    color: darkslateblue;
+    span{
+      background: url(/src/assets/text-bg.png) no-repeat;
+      background-size: contain;
+      background-position: left;
+      padding: 0px 23px;
+    }
+    }
+    p{
+      font-size: 18.75px;
+      line-height: 28.125px;
+      color: var(--secondary-color2);
+      max-width: 80%;
+    }
+}
+  .banner-image{
+  /* display: flex;
+  justify-content: end;
+  align-items: center; */
+  img{
+    height: 100%;
+    width: 100%;
+  }
+}
+}
+
+ul.features-list {
+  list-style: none;
+  margin-top: 5rem !important;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  font-style: italic;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  font-size: 2.5rem;
+  li{
+    position: relative;
+  }
+  li::before{
+    content: " ";
+display: block;
+height: 2.5rem;
+width: 2.5rem;
+position: absolute;
+left: -3rem;
+bottom: .8rem;
+  }
+  li:nth-child(1)::before{
+    background: url(../../assets/organizeTaskIcon.png) no-repeat;
+    background-size: contain;
+  }
+  li:nth-child(2)::before{
+    background: url(../../assets/trackIcon.png) no-repeat;
+    background-size: contain;
+  }
+  li:nth-child(3)::before{
+    background: url(../../assets/colabIcon.png) no-repeat;
+    background-size: contain;
+  }
+  li:nth-child(4)::before{
+    background: url(../../assets/solveIcon.png) no-repeat;
+    background-size: contain;
+  }
+}

@@ -1,0 +1,19 @@
+
+.task-close-btn{
+  height: 2.8rem;
+  width: 2.8rem;
+  display: grid;
+  place-content: center;
+  background: transparent;
+  border: none;
+
+  img{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* .add-project-info-form{
+  top:65%;
+  left:65%;
+} */

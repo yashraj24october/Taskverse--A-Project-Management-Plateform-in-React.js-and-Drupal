@@ -1,0 +1,46 @@
+/*  Logo */
+
+.logo {
+  height: 5rem;
+  width: 22rem;
+  img{
+max-width: 100%;
+height: 100%;
+  }
+}
+
+/* Header */
+
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+  box-shadow:0px 2px 4px grey;
+  .row{
+    
+    display: flex;
+    align-items: center;
+    .right-menu{
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
+  }
+  
+}
+
+.header-bottom{
+  .container{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    &::before{
+      content: unset !important;
+    }
+    &::after{
+      content: unset !important;
+    }
+  }
+}
