@@ -1,0 +1,38 @@
+section.page-title {
+  min-height: 9rem;
+  height: 22rem;
+  
+  
+  /* align-items: center; */
+  background:url(../../assets/page-title-banner-new.jpg) center/cover no-repeat;
+  > div{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    &::after,&::before{
+      content:unset !important;
+    }
+    img {
+      width: auto;
+      height: 18rem;
+      margin-top: 1rem;
+  }
+  }
+  h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px darkslateblue;
+    margin-bottom: 1.5rem;
+}
+p{
+  color:#fff;
+  font-size: 2rem;
+  max-width: 80%;
+  line-height: 1.6;
+}
+}
+
+section.page-title .container > div{
+  padding-top: 5rem;
+}

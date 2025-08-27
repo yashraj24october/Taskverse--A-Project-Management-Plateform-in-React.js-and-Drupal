@@ -1,19 +1,36 @@
 
-.task-close-btn{
-  height: 2.8rem;
-  width: 2.8rem;
-  display: grid;
-  place-content: center;
-  background: transparent;
-  border: none;
 
-  img{
-    height: 100%;
-    width: 100%;
-  }
+form{
+  position: relative;
+  .subform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    >.subform-item{
+      background: #fff;
+      width: 49%;
+      box-shadow: 1px 1px 20px 4px rgba(102, 105, 107, 0.144);
+      /* box-shadow: 2px 2px 20px 4px rgba(123, 186, 211, 0.356); */
+      min-width: 320px;
+      padding: 2rem;
+      outline: 1px double hsla(195, 100%, 50%, 0.329);
+      border-radius: .2rem;  
+
+      >legend{
+        font-weight: 700;
+        padding-top: 1.5rem;
+        fieldset{
+          legend{
+            text-align: center;
+          }
+        }
+      }
+    }
+}
+.subform-item:has(fieldset#project-main-info) {
+  width: 100% !important;
 }
 
-/* .add-project-info-form{
-  top:65%;
-  left:65%;
-} */
+}

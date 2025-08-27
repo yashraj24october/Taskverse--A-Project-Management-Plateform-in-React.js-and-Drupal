@@ -1,0 +1,48 @@
+.form-wrapper{
+  background: url(./assets/bg.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  place-content: center;
+  padding: 7rem 0;
+  }
+  form{
+      background: #fff;
+      padding: 2rem;
+      outline: 12px solid #1e90ff96;
+      /* margin: 7rem auto; */
+      width:50vw;
+      min-width:280px;
+      border-radius: 1.5rem;
+      &#add-project-info{
+        width:90vw;
+      }
+        h2{
+          font-size: 2.8rem;
+          font-weight: 600;
+        }
+    input,textarea{
+      width: 100%;
+      padding: 12px !important;
+      border-radius: .5rem !important;
+      /* background: var(--primary-color2); */
+      border: 1px solid skyblue;
+      margin-bottom: 1.2rem !important;
+      &:focus{
+        outline: 1px solid deepskyblue;
+      }
+      &:focus-within{
+        outline: 1px solid deepskyblue;
+      }
+    }
+  }
+  .task-close-btn{
+    height: 2.8rem;
+    width: 2.8rem;
+    display: grid;
+    place-content: center;
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }

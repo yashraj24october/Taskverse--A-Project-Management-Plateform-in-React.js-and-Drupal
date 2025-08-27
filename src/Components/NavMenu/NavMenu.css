@@ -68,7 +68,7 @@ ul.submenu{
   li{
   padding: 1rem 1.5rem;
   border-radius: 1rem;
-white-space: nowrap;
+ white-space: nowrap;
 color: var(--secondary-color2);
 font-weight: 600;
 margin-bottom: .5rem;

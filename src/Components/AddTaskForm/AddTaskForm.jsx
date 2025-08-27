@@ -3,7 +3,9 @@ import { useEffect } from 'react';
 import axios from 'axios';
 import closeIcon from '../../assets/close-btn.png'
 import './AddTaskForm.css'
-
+import Header from '../Header/Header';
+import PageTitle from '../PageTitle/PageTitle';
+import taskIcon from '../../assets/taskIcon.png'
 const AddTaskForm = () => {
   let [taskData,setTaskData] = useState({
     taskTitle: '',
@@ -17,7 +19,7 @@ const AddTaskForm = () => {
   async function addTask(e){
     setLoading(true);
     e.preventDefault();
-    checkReviewAdded(true);
+   
     if(taskData.taskTitle.length!=0 && taskData.taskDescription.length!=0 && taskData.projectName.length!=0){  
       try {
                let response = await axios.post('https://dev-yashdevportfolio.pantheonsite.io/node?_format=json', {
@@ -67,11 +69,13 @@ const AddTaskForm = () => {
   
   }
   return (
+    <>
+    <Header/>
+    <PageTitle pageTitle="<h2>Add Your Task</h2><p>Stay on top of your work -- add tasks, track progress, and resolve issues seamlessly!</p>" illustration={taskIcon}/>
+    <section className='form-wrapper'>
     <form onSubmit={(e)=>{addTask(e)}} className='add-task-form'>
     <h2 className='text-center'>Add Your Task</h2>
-    <div className='hr-wrapper'>
-    <hr/>
-    </div>
+ 
     
     {/* <h3>Add Testimonial</h3> */}
     <button className='task-close-btn' ><img src={closeIcon} alt='close-icon'/></button>
@@ -96,6 +100,8 @@ const AddTaskForm = () => {
 <button type="submit" disabled={(success) ? true : false}><span>{(loading)? 'Submitting...' : (success) ? 'Task submitted!' : 'Submit your task'}</span></button>
       </div>
     </form>
+    </section>
+    </>
   )
 }
 

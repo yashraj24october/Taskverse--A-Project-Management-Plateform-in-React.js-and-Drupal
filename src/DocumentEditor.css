@@ -1,0 +1,16 @@
+.ql-toolbar  {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-radius: .5rem !important;
+  box-shadow: 2px 2px 4px skyblue,1px 0px 4px skyblue;
+}
+
+.ql-container {
+  margin-top: 2.2rem !important;
+  background: #ffff;
+  min-height: 40vh;
+  border-radius: .3rem;
+}

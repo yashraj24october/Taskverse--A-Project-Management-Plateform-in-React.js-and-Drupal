@@ -18,6 +18,7 @@ header{
   z-index: 10;
   background: #fff;
   box-shadow:0px 2px 4px grey;
+  width: 96%;
   .row{
     
     display: flex;

@@ -1,9 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+#root {
+  padding-top: 12.4rem;
+}
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -21,6 +20,7 @@ body {
   min-height: 100vh;
   font-family: Roobert,sans-serif;
   background: linear-gradient(82deg, #87ceeb9e, transparent) no-repeat;
+  padding-left: 6.8rem;
 }
 
 h1 {

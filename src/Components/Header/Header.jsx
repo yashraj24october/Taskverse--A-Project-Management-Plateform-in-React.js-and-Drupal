@@ -5,6 +5,8 @@ import NavMenu from "../NavMenu/NavMenu";
 import SecondaryMenu from "../NavMenu/SecondaryMenu/SecondaryMenu";
 import AccountMenu from "../NavMenu/AccountMenu/AccountMenu";
 import CurrentDateNotification from "../CurrentDateNotification/CurrentDateNotification";
+import MobileNavigationSidebar from "../MobileNavigationSidebar/MobileNavigationSidebar";
+
 
 const Header = () =>{
   return <header>
@@ -28,6 +30,7 @@ const Header = () =>{
   <CurrentDateNotification/>
     <SecondaryMenu/>
     </div>
+    <MobileNavigationSidebar/>
   </div>
   </header>
 }

@@ -13,17 +13,22 @@
       li{
         /* outline: 1px solid purple; */
         padding: 4px 8px;
-        border-radius: .2rem;
+        border-radius: .5rem;
         box-shadow: 1px 1px 4px grey;
         background: #7546BC;
+        transition: .1s all ease-in;
         &:hover{
-          opacity: .8;
+          opacity: .9;
+          scale: .96;
         }
        a{
         color: #fff !important;
         span{
           font-size: 1.5rem;
           margin-right: 1rem;
+          &:last-child{
+            display: none;
+          }
         }
        }
       }

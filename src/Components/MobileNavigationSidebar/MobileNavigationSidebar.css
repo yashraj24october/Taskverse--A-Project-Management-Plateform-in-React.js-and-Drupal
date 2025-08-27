@@ -1,0 +1,44 @@
+section.mobile-navigation-sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  block-size: 100%;
+  background: #483D8B;
+  display: grid;
+  place-items: center;
+  box-shadow: 2px 2px 4px black;
+  ul {
+  flex-direction: column;
+  gap: 1.1rem;
+  li{
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 1rem 2rem !important;
+    min-block-size: 4rem;
+    display: grid;
+    place-content: center;
+    &:hover{
+      background: #000 !important;
+      color: #fff !important;
+    }
+    a{
+      font-size: 0;
+    
+      fill: #fff !important;
+    span{
+      &:first-child{
+        display: none !important;
+      }
+      &:last-child{
+        display: block !important;
+     margin: 0 !important;
+     font-size: 2.8rem !important;
+      }
+    }
+  }
+  }
+}
+
+}
+

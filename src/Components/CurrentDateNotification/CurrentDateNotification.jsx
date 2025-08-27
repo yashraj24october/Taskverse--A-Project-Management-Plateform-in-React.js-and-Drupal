@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import './CurrentDateNotification.css'
 const CurrentDateNotification = () => {
   const [time, setTime] = useState('morning');
   const [currentDate, setCurrentDate] = useState('');

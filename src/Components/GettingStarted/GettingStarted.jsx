@@ -5,9 +5,10 @@ const GettingStarted = () => {
   return (
     <>
     <Header/>
-    
-      <h2>Taskverse - Universe of Task management</h2>
-    
+    <section className='get-started container'>
+<h2>Taskverse - Universe of Task management</h2>
+
+</section>
     </>
   )
 }
